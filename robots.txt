@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lifetime-discount-review.deno.dev/sitemap.xml
