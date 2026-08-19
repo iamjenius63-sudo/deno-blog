@@ -1,10 +1,3 @@
+import { serveDir } from "jsr:@std/http/file-server";
 
-import { serve } from "https://deno.land/std@0.140.0/http/server.ts";
-import { serveDir } from "https://deno.land/std@0.140.0/http/file_server.ts";
-
-serve((req) => {
-  return serveDir(req, {
-    fsRoot: ".",
-    showDirListing: true,
-  });
-});
+Deno.serve((req) => serveDir(req, { fsRoot: ".", showDirListing: false }));
